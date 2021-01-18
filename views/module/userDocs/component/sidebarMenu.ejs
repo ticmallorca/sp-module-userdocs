@@ -1,0 +1,35 @@
+<li class="nav-item nav-item-submenu">
+	<a href="#" class="nav-link"><i class="icon-folder3"></i> <span>Documents interns</span></a>
+	<ul class="nav nav-group-sub" data-submenu-title="Menu levels" style="display: none;">
+		<%
+		// Recursive function to create the folder struct
+		var presentFolder = [];
+
+		function recursive(level){
+			for (var item in level) {
+				presentFolder.push(item);
+				if (level[item].child!== undefined){
+					%><li class="nav-item nav-item-submenu">
+					<a href="#" class="nav-link"><i class="icon-folder3"></i> <span><%= item%></span></a>
+					<ul class="nav nav-group-sub" data-submenu-title="Menu levels" style="display: none;"><%
+
+					recursive(level[item].child);
+				}else {
+					var path = "/";
+					for (var i in presentFolder){
+						path += `${presentFolder[i]}/`;
+					}
+					%><li class="nav-item"><a href="/userDocs/panel<%= path%>" class="nav-link"><i class="icon-folder3"></i> <%= item%></a></li><%
+				}
+				presentFolder.pop();
+			}
+			%>
+			</ul></li>
+			<%
+		}
+
+		recursive(module['userDocs'].settings.settings.folder);
+		%>
+
+	</ul>
+</li>

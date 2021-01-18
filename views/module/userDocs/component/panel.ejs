@@ -1,0 +1,34 @@
+<script>
+	var userDocs_vars_path = "<%- req.session.userDocs.path%>"
+</script>
+
+<div class="content">
+	<div class="card">
+		<div class="card-header header-elements-inline">
+			<h5 class="card-title"><%= module.userDocs.language[page.lang].panel_tableTitle%>
+				<%=req.session.userDocs.path%></h5>
+			<div class="header-elements">
+				<div class="list-icons">
+					<a class="list-icons-item" data-action="reload" id="userDocsReloadContent"></a>
+				</div>
+			</div>
+		</div>
+		<div class="card-body">
+			<%= module.userDocs.language[page.lang].panel_tableDescription%>
+		</div>
+		<div id="dataTableContent">
+			<table class="table datatable-basic table-striped">
+				<thead>
+					<tr>
+						<th><%= module.userDocs.language[page.lang].panel_tableColumnType%></th>
+						<th><%= module.userDocs.language[page.lang].panel_tableColumnFileName%></th>
+						<th><%= module.userDocs.language[page.lang].panel_tableColumnCreated%></th>
+						<th class="text-center"><%= module.userDocs.language[page.lang].panel_tableColumnAction%></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

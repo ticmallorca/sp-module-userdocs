@@ -1,0 +1,20 @@
+{
+	"module": "userDocs",
+	"author": {
+		"author": "Alejandro Villén Hernández",
+		"git": "https://gitlab.com/alejandrovildez"
+	},
+	"contributors": [{
+		"author": "Alejandro Villén Hernández",
+		"git": "https://gitlab.com/alejandrovildez"
+	}],
+	"version": "v1.0.0",
+	"sidebar_title":"Documents interns",
+	"panel_tableTitle": "Llistat de documents de",
+	"panel_tableDescription": "A continuació trobareu els documents que teniu per a la secció triada.",
+	"panel_tableColumnType": "Tipus",
+	"panel_tableColumnFileName": "Nom",
+	"panel_tableColumnCreated": "Creació",
+	"panel_tableColumnStatus": "Estat",
+	"panel_tableColumnAction": "Accions"
+}

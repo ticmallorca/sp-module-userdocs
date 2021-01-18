@@ -1,0 +1,20 @@
+{
+	"module": "userDocs",
+	"author": {
+		"author": "Alejandro Villén Hernández",
+		"git": "https://gitlab.com/alejandrovildez"
+	},
+	"contributors": [{
+		"author": "Alejandro Villén Hernández",
+		"git": "https://gitlab.com/alejandrovildez"
+	}],
+	"version": "v1.0.0",
+	"sidebar_title":"Documentos internos",
+	"panel_tableTitle": "Listado de documentos procedentes de ",
+	"panel_tableDescription": "A continuación tiene los documentos de la sección seleccionada.",
+	"panel_tableColumnType": "Tipo",
+	"panel_tableColumnFileName": "Nombre",
+	"panel_tableColumnCreated": "Creación",
+	"panel_tableColumnStatus": "Estado",
+	"panel_tableColumnAction": "Acciones"
+}

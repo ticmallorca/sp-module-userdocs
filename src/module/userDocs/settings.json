@@ -1,0 +1,54 @@
+{
+	"name": "userDocs",
+	"version": "1.0.0",
+	"link": "/",
+	"settings": {},
+	"language": {
+		"en": {},
+		"ca": {},
+		"es": {}
+	},
+	"component": {
+		"sideBar": {
+			"name": "sideBar",
+			"link": "/",
+			"dependencies": {
+				"css": [],
+				"javascript": []
+			}
+		},
+		"panel": {
+			"name": "panel",
+			"dependencies": {
+				"css": [],
+				"javascript": [
+					"/module/userDocs/js/panel/panel.js",
+					"/module/userDocs/js/panel/view.js",
+					"/module/userDocs/js/panel/controller.js"
+				]
+			}
+		}
+	},
+	"dependencies": {
+		"css": [],
+		"javascript": [
+			"/js/tools/moment/moment.min.js",
+			"/js/tools/moment/moment-with-locales.min.js",
+			"/js/tools/moment/moment-locale-es.js",
+			"/js/tools/printThis/printThis.js",
+			"/resources/js/plugins/tables/datatables/datatables.min.js",
+			"//cdn.datatables.net/plug-ins/1.10.12/sorting/datetime-moment.js",
+			"/resources/js/plugins/tables/datatables/extensions/buttons.min.js",
+			"/resources/js/plugins/tables/datatables/extensions/col_reorder.min.js",
+			"/resources/js/plugins/tables/datatables/extensions/natural_sort.js",
+			"/resources/js/plugins/tables/datatables/extensions/responsive.min.js",
+			"/resources/js/plugins/tables/datatables/extensions/jszip/jszip.min.js",
+			"/resources/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js",
+			"/resources/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js",
+			"/resources/js/plugins/notifications/bootbox.min.js",
+			"/resources/js/plugins/forms/selects/select2.min.js",
+			"/resources/js/plugins/media/fancybox.min.js",
+			"/resources/js/plugins/forms/styling/uniform.min.js"
+		]
+	}
+}
